@@ -1,0 +1,24 @@
+# Placeholder CI. It calls the same ./scripts/* wrappers agents use, so CI and agents
+# can never disagree about how to build or test.
+#
+# The scripts are stubs that exit 1 until wired to your stack, so this workflow starts
+# as manual-only. Once scripts/ is wired: (1) add your toolchain setup step below,
+# (2) replace `workflow_dispatch` with push/pull_request triggers.
+name: CI
+
+on:
+  workflow_dispatch:
+  # push:
+  #   branches: [main]
+  # pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # TODO: toolchain setup, e.g. actions/setup-node@v4 / actions/setup-python@v5
+      - run: ./scripts/setup
+      - run: ./scripts/lint
+      - run: ./scripts/test
+      - run: ./scripts/build

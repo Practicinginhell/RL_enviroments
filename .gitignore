@@ -1,0 +1,29 @@
+# Claude Code — personal / machine-local files (do NOT commit)
+.claude/settings.local.json
+CLAUDE.local.md
+.claude/agent-memory-local/
+
+# Claude Code — keep these tracked (shared with your team):
+#   .claude/settings.json
+#   .claude/skills/
+#   .claude/agents/
+#   .claude/rules/
+#   CLAUDE.md
+#   .mcp.json
+
+# Secrets
+.env
+.env.*
+!.env.example
+secrets/
+
+# Dependencies / build output (adjust to your stack)
+node_modules/
+dist/
+build/
+.venv/
+__pycache__/
+
+# OS junk
+.DS_Store
+Thumbs.db

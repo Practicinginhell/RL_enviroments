@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# scripts/test — run the test suite. Extra args are forwarded to the runner,
+# so `./scripts/test path/to/one_test` works for focused runs.
+#
+# Wire this to your stack, e.g.:
+#   npm test -- "$@"           # Node
+#   pytest "$@"                # Python
+#   go test ./... "$@"         # Go
+#   cargo test "$@"            # Rust
+#
+# Contract: exit 0 = all green, non-zero = failures. Non-interactive.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+echo "TODO(scripts/test): wire this to your stack, then delete these two lines." >&2
+exit 1

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "_comment": "Copy this to settings.local.json for personal, machine-specific overrides. settings.local.json is gitignored and is NOT shared with your team. Use it for your own permission allowlist and env vars.",
+  "permissions": {
+    "allow": []
+  },
+  "env": {}
+}

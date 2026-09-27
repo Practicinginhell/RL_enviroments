@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# scripts/setup — install dependencies and prepare a working environment.
+#
+# Wire this to your stack, e.g.:
+#   npm install                                               # Node
+#   python -m venv .venv && .venv/bin/pip install -r requirements.txt   # Python
+#   go mod download                                           # Go
+#   cargo fetch                                               # Rust
+#
+# Agents and CI call this instead of guessing your package manager.
+# Contract: idempotent, non-interactive, exit 0 on success.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+echo "TODO(scripts/setup): wire this to your stack, then delete these two lines." >&2
+exit 1

@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# scripts/build — produce a production artifact (bundle, binary, package, image).
+#
+# Wire this to your stack, e.g.:
+#   npm run build              # Node / web
+#   python -m build            # Python package
+#   go build -o bin/ ./...     # Go
+#   cargo build --release      # Rust
+#   docker build -t app .      # Container
+#
+# Contract: exit 0 = artifact produced, non-zero = build failure.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+echo "TODO(scripts/build): wire this to your stack, then delete these two lines." >&2
+exit 1

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json.schemastore.org/mcp.json",
+  "_comment": "Project-scoped MCP servers, shared with your team via git. Each server gives Claude extra tools (databases, browsers, APIs, etc). Remove the examples and add your own. Run `claude mcp add` to manage these interactively.",
+  "mcpServers": {
+    "_example_filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "./"]
+    }
+  }
+}

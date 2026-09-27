@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# scripts/dev — run the application locally for development.
+#
+# Wire this to your stack, e.g.:
+#   npm run dev                # Node / web
+#   python -m app              # Python
+#   go run ./cmd/server        # Go
+#   cargo run                  # Rust
+#
+# Contract: runs in the foreground, logs to stdout/stderr.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+echo "TODO(scripts/dev): wire this to your stack, then delete these two lines." >&2
+exit 1

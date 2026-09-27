@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# scripts/lint — static analysis and style checks (read-only; no auto-fixing,
+# that's scripts/format).
+#
+# Wire this to your stack, e.g.:
+#   npx eslint . && npx tsc --noEmit    # Node/TS
+#   ruff check . && mypy .              # Python
+#   go vet ./...                        # Go
+#   cargo clippy -- -D warnings         # Rust
+#
+# Contract: exit 0 = clean, non-zero = findings. Non-interactive.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+echo "TODO(scripts/lint): wire this to your stack, then delete these two lines." >&2
+exit 1

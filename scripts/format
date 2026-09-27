@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# scripts/format — auto-format the codebase in place.
+#
+# Wire this to your stack, e.g.:
+#   npx prettier --write .     # Node
+#   ruff format .              # Python
+#   gofmt -w .                 # Go
+#   cargo fmt                  # Rust
+#
+# Contract: idempotent; running twice changes nothing the second time.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+echo "TODO(scripts/format): wire this to your stack, then delete these two lines." >&2
+exit 1
